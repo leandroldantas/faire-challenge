@@ -2,8 +2,6 @@ FAIRE - CHALLENGE - LEANDRO JORDAO
 ========================
 
 
-The challenge was due on Saturday.
-
 ---
 Building
 -------------------
