@@ -1,29 +1,8 @@
 import config.JarConfig;
-import entity.order.ItemOrder;
-import entity.order.Order;
-import entity.order.OrderState;
-import entity.product.Product;
-import entity.product.option.ProductOption;
-import rest.FaireRestClient;
-import rest.pojos.InventoryLevel;
-import rest.pojos.ItemAwaitAvailability;
 import steps.FirstStep;
 import steps.SecondStep;
 import steps.ThirdStep;
-import util.ValidatorUtils;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import static entity.order.OrderState.*;
 import static java.lang.Integer.parseInt;
 
 public class Main {
