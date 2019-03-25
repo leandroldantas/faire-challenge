@@ -83,12 +83,20 @@ public class SecondStep {
             }
         });
 
-        if (atomicBoolean.get()) {
+        /**
+         * If we have one item in the inventory, we will accept the order
+         */
+        if (toUpdate.size() > 0) {
             secondExerciseAcceptOrder(order);
             secondExerciseUpdateInventory(toUpdate);
-        } else {
+        }
+
+        if (toBackordered.size() > 0) {
             secondExerciseBackordered(order.getId(), toBackordered);
         }
+        /**
+         * If we don't have all items, what I have to do ?
+         */
     }
 
 
